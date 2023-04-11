@@ -6,7 +6,18 @@ Welcome
 -----------
 To the only PW Manager you need :) 
 -------------------------------------------------
-
+(screenshot files attached in main folder)
+-------------------
+MAIN FEATURES:
+--------------------
+ - Emails & Passwords are encrypted & stored onto a .DB file that can be securely stored anywhere, such as on a USB.
+ - Random password generator (choose between 8 & 32 characters)
+ - 'Compromised' button checks HIBP API if the password retrieved has been leaked (credits below)
+ - 'Nuke' button to quickly destory all of the passwords in your .DB file
+ - Easily access passwords with arrow keys, as well as 'R' for retrieve and 'D' for delete (macros below)
+ - Mini-game embedded that's sort of broken (working on this). Double click the mouse button on the background of the program to run it.  
+ -------------------
+ 
 Credit:
 -----------
 This project was programmed in Python 3.11 by James Saoumi, but this program couldn't have been put together without:
@@ -20,7 +31,7 @@ This project was programmed in Python 3.11 by James Saoumi, but this program cou
 BEFORE RUNNING:
 
 ----------------
-1) Search for #REPLACE THIS WITH YOUR DESTINATION tag and replace (r"C:\Users\...\Desktop\PW_Mngr 4\PW_MNGR.png") with the relevant destination. 
+1) Search for #REPLACE THIS WITH YOUR DESTINATION tag and replace (r"C:\Users\...\PW_MNGR.png") with the relevant destination. 
 
 2) You must have the following libraries installed to run the code:
 Tkinter
@@ -42,7 +53,7 @@ To compress this with PyInstaller, see:
 https://github.com/TomSchimansky/CustomTkinter/wiki/Packaging
 
 In case it helps, this is the command I used in PyInstaller to get it working for me:
-py -m PyInstaller --onedir --windowed --icon="C:/Users/.../.../PW_Mngr 5.1/PW_MNGR.ico" --add-data "C:/Users/.../AppData/Local/Programs/Python/Python311/Lib/site-packages/customtkinter;customtkinter/" --add-data "C:/Users/.../.../PW_Mngr 5.1/PW_MNGR.png;." "C:/Users/.../.../PW_Mngr 5.1/PW_Manager5.1.py"
+py -m PyInstaller --onedir --windowed --icon="C:/Users/.../PW_MNGR.ico" --add-data "C:/Users/.../AppData/Local/Programs/Python/Python311/Lib/site-packages/customtkinter;customtkinter/" --add-data "C:/Users/.../PW_MNGR.png;." "C:/Users/.../.../PW_Mngr 5.1/PW_Manager5.1.py"
 
 ----------------------------------------------------
 
@@ -107,5 +118,7 @@ When a password is stored in your .DB file, it is encrypted. The only way to ret
 
 As an extra layer of security, it is recommended that you store your database file somewhere safe such as on a secure USB/hard drive to reduce the likelihood of the file getting into the wrong hands. Remember to never share your master key with anyone and make sure to keep it safe as it cannot be retrieved.
 
-Feedback: 
-PLEASE feel free to give feedback / open an issue if there's anything I can do to help. 
+-----------------------------------------------------
+Feedback
+----------------
+PLEASE give feedback / open an issue if there's anything I can do to help if you're having trouble running this or have any suggestions for me!
