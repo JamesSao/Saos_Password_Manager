@@ -27,7 +27,7 @@ When a master key is generated, it is passed through a key derivation function (
 The resulting key is then used to encrypt and decrypt your passwords, ensuring that they are stored in an unreadable format in the database file. Additionally, this program uses the Pwned Passwords API provided by Troy Hunt's 'Have I Been Pwned' (HIBP) project to check if a password has been exposed without transmitting the password in plaintext over the internet.
 When a password is stored in your .DB file, it is encrypted. The only way to retrieve it is back through the program, using the masterkey attached the database file (which is also encrypted, so REMEMBER IT).
 
-As an extra layer of security, it is recommended that you store your database file somewhere safe such as on a secure USB/hard drive to reduce the likelihood of the file getting into the wrong hands. Remember to never share your master key with anyone and make sure to keep it safe as it cannot be retrieved.
+As an extra layer of security, it is recommended that you store your database file somewhere safe such as on a secure USB/hard drive. Remember to never share your master key with anyone and make sure to keep it safe as it cannot be retrieved.
 
 -----------------------------------------------------
  
