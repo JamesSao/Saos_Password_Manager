@@ -4,8 +4,6 @@ Encrypted password manager programmed in Python 3.11 - using PBKDF2-HMAC with AE
 -----------
 Welcome 
 -----------
-To the only PW Manager you need :) 
--------------------------------------------------
 (screenshot files attached in main folder)
 -------------------
 MAIN FEATURES:
