@@ -4,6 +4,29 @@ WELCOME
 (Screenshots in the repo)
 
 -------------------------------
+FOR NON-TECHNICAL USERS:
+
+Imagine you run a **secret library** where you store important documents (your passwords).
+
+1. **Argon2id key derivation** is the **key machine** at the entrance. You bring your simple master key (password), and the machine reforges it into a heavy-duty, unique master key. No one else’s key will fit your vault because the machine mixes in a special secret ingredient (salt).
+
+2. That master key unlocks the **giant vault door** — this is **SQLCipher full-database encryption**. Behind it is the entire library, but without the key all anyone sees is a sealed, indestructible vault.
+
+3. Inside the vault, every book (website entry) is also sealed in its own **locked envelope** — this is **Fernet field-level encryption**. Even if someone got into the vault, they’d still need the master key to open each envelope.
+
+4. The **verifier** is like a guard inside the vault who checks whether your key is legit. But the guard never sees the full master key — only a special stamp (HMAC) that proves it’s real.
+
+5. Finally, when you borrow a book, the librarian writes the password on a **sticky note** for you (clipboard). But the note is enchanted to **self-destruct in 30 seconds**, so nobody else can grab it later.
+
+So in short:
+
+* The **machine (Argon2id)** makes your master key super strong and unique.
+* The **vault door (SQLCipher)** protects the entire database file.
+* The **locked envelopes (Fernet)** keep each entry safe individually.
+* The **guard (verifier)** checks your key without exposing it.
+* The **self-destructing notes (clipboard auto-clear)** stop leaks after use.
+  
+-------------------------------
 
 MAIN FEATURES:
 
