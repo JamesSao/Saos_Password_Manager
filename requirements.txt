@@ -1,0 +1,6 @@
+customtkinter
+Pillow
+cryptography
+pyperclip
+requests
+argon2-cffi
